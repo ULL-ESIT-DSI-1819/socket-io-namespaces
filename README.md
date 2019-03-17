@@ -5,16 +5,23 @@ Socket.IO allows you to “namespace” your sockets, which essentially means as
 This is a useful feature to minimize the number of resources (TCP connections) and at the same time separate concerns within your application by introducing separation between communication channels.
 
 ```
-ns
-├── index.html
-├── index.js
-└── index2.html
-```
+[~/.../socket-io-namespaces(master)]$ tree -I node_modules
+.
+├── README.md
+├── ns
+│   ├── index.js
+│   ├── public
+│   │   └── index.html
+│   └── views
+│       └── space.ejs
+├── package-lock.json
+├── package.json
+└── rooms
+    ├── index.js
+    ├── public
+    │   └── index.html
+    └── views
+        └── room.ejs
 
-```
-rooms
-├── index.html
-├── index.js
-└── index2.html
-
+6 directories, 9 files
 ```
