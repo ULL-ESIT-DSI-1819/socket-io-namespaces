@@ -4,12 +4,13 @@
       <title>Hello world</title>
    </head>
    <script src = "/socket.io/socket.io.js"></script>
+   <div id="chat"></div>
 
    <script>
-      var socket = io('/my-namespace');
+      const socket = io('/<%- space %>');
+      let chat = document.getElementById("chat");
       socket.on('hi',function(data) {
-         document.body.innerHTML = '';
-         document.write(data);
+        chat.innerHTML += `<p>${data}</p>`;
       });
    </script>
    <body></body>

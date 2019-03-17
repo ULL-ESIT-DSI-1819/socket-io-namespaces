@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon ns/index.js"
   },
   "keywords": [],
   "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
     "socket.io": "^2.2.0"
   }
 }
